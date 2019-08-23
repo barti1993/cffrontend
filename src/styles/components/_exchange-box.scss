@@ -1,0 +1,81 @@
+.exchange-box {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-top: $xl-size;
+    font-family: "PostGrotesk Light";
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: $l-size;
+    font-family: "PostGrotesk Book";
+    color: $dark-grey;
+  }
+  .exchange-box__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 10rem;
+    flex-shrink: 4;
+    flex-grow: 1;
+    padding: $l-size;
+    border: $border-width solid $grey;
+    border-radius: $border-radius;
+    h3 {
+      padding: 0;
+      margin: 0 0 1.2rem 0;
+      text-transform: uppercase;
+      font-size: $font-size-exchange-box-title;
+      font-weight: 500;
+      color: $dark-grey;
+    }
+    .amount {
+      h3 {
+        font-family: "PostGrotesk Medium";
+      }
+      .amountDottedExtension {
+        font-size: 2rem;
+      }
+      div {
+        font-weight: 700;
+        font-size: $font-size-exchange-box-amount;
+        font-family: "PostGrotesk Book";
+        @media only screen and (max-width: 845px) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .currency {
+      font-family: "PostGrotesk Bold";
+      color: $darkest-grey;
+      width: 11rem;
+      border-radius: 3rem 0.5rem 0.5rem 3rem;
+      border: $border-width solid $grey;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem 0 1rem;
+      img {
+        width: 3rem;
+        height: auto;
+      }
+    }
+  }
+  .receiver-box {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+  }
+  .sender-box {
+    h3 {
+      color: $blue;
+    }
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: $darken-white;
+    border: $border-width solid $blue;
+  }
+  button {
+    font-family: "PostGrotesk Book";
+  }
+}
