@@ -5,6 +5,7 @@ import React from "react";
  *
  * @param {props} onValueChanged - function which handle entering values to inputs and moving caret
  * @param {state} values -  array of values entered
+ * @param {props} numberOfInputs - number of inputs to be rendered in the component
  */
 export default class InputGroup extends React.Component {
   state = { values: [] };

@@ -6,6 +6,6 @@ import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
 
-const jsx = <AppRouter passValues />;
+const jsx = <AppRouter />;
 
 ReactDOM.render(jsx, document.getElementById("app"));

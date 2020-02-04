@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ExchangePage from "../components/ExchangePage";
 import NotFoundPage from "../components/NotFoundPage";
 
-// Example data, passed from external API or backend
+// Example data, can be passed from external API or backend
 const data = {
   senderCurrency: "EUR",
   senderAmount: "2000",

@@ -36,6 +36,20 @@
   }
 }
 
+@media only screen and (max-width: 1150px) {
+  .content-container {
+    .main-container {
+      padding: 0 0 0 4%;
+      padding-right: 4%;
+      padding-top: $main-content-padding-top;
+    }
+    .sidebar {
+      padding: 0 4% 0 4%;
+      padding-top: $main-content-padding-top;
+    }
+  }
+}
+
 @media only screen and (max-width: 1085px) {
   .main-container {
     padding: $mobile-content-padding;
