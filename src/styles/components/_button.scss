@@ -1,0 +1,14 @@
+.button {
+  background: $blue;
+  color: $white;
+  border: none;
+  margin-top: $l-size;
+  padding: $m-size;
+  font-weight: 300;
+  font-size: $font-size-large;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: $border-radius;
+  width: 8rem;
+}

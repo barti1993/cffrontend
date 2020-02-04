@@ -1,0 +1,21 @@
+.exchange-box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: $xl-size;
+  font-size: $font-size-footer-links;
+  border-top: $border-width solid $grey;
+  padding: 2rem 0 0 0;
+  font-family: "PostGrotesk Book";
+  .copyright {
+    color: $dark-grey;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+      margin: 0 0 0 2rem;
+    }
+  }
+}

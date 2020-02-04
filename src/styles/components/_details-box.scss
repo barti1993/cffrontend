@@ -1,0 +1,89 @@
+.details-box {
+  display: flex;
+  flex-direction: column;
+  border: $border-width solid $border-color;
+  max-width: 100%;
+  min-width: 300px;
+  border-radius: $border-radius;
+
+  .details-box__sending-details,
+  .details-box__receiving-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-box__header {
+    padding: $l-size;
+    background: $light-grey;
+    font-family: "PostGrotesk Medium";
+    color: $darkest-grey;
+    border-bottom: $border-width solid $border-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "PostGrotesk Book";
+      font-size: $font-size-links;
+    }
+    img {
+      width: 1.5rem;
+      height: auto;
+      margin: 0 0 0 1rem;
+    }
+  }
+  .details-box__body {
+    font-family: "PostGrotesk Book";
+    background: $white;
+    padding: 1rem $l-size 1rem $l-size;
+    border-bottom: $border-width solid $border-color;
+    .details-box__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem 0 2rem 0;
+      .label {
+        color: $dark-grey;
+      }
+      .content {
+        color: $dark-grey;
+      }
+    }
+  }
+
+  .details-box__sending-details {
+    .details-box__body {
+      .details-box__item {
+        .content {
+          font-family: "PostGrotesk Medium";
+          color: $darkest-grey;
+        }
+      }
+    }
+  }
+
+  .details-box__receiving-details {
+    .details-box__body {
+      padding: 2rem $l-size 2rem $l-size;
+      .details-box__item {
+        padding: 1rem 0 1rem 0;
+        .total {
+          color: $darkest-grey;
+          font-family: "PostGrotesk Medium";
+        }
+      }
+    }
+  }
+
+  .details-box__footer {
+    padding: $l-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $yellow;
+    font-family: "PostGrotesk Medium";
+  }
+}

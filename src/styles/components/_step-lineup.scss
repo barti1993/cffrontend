@@ -1,0 +1,38 @@
+.step-lineup-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .step-lineup-item {
+    font-family: "PostGrotesk Medium";
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    color: $medium-grey;
+    padding: 0 $l-size 0 $l-size;
+    border-bottom: $step-border-width solid $light-blue;
+    font-size: $font-size-steps-description;
+    h3 {
+      padding: 0;
+      margin: 0;
+      font-family: "PostGrotesk Light";
+      font-size: $font-size-steps-number;
+    }
+    p {
+      padding: 0;
+      margin: 0.8rem 0 1.7rem 0;
+    }
+  }
+  @media only screen and (max-width: 845px) {
+    .step-lineup-item {
+      padding: 0 $s-size 0 $s-size;
+    }
+  }
+}
+
+.step-lineup-container > .current-step {
+  color: $blue;
+  border-bottom: $step-border-width solid $blue;
+}

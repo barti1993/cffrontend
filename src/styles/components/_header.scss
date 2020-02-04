@@ -1,0 +1,23 @@
+.header {
+  background: $header-bg;
+  height: 90px;
+  .header__title {
+    color: $white;
+    text-decoration: none;
+
+    h1 {
+      margin: 0;
+    }
+
+    .header__logo {
+      width: 200px;
+      height: auto;
+      margin: 0 0 0 15%;
+    }
+    @media only screen and (max-width: 845px) {
+      .header__logo {
+        margin: 0 0 0 5%;
+      }
+    }
+  }
+}
